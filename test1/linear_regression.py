@@ -39,7 +39,9 @@ class LinearRegression:
         plt.plot(self.x[:, 1], self.x * theta, '-r', label='fit curve')
         plt.xlabel('x')
         plt.ylabel('y')
+        plt.legend(loc='upper left')
         plt.title('goodness of fit')
+        print(self.x[:, 1])
         plt.show()
 
 
